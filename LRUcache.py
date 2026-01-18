@@ -111,7 +111,7 @@ class LRUcache(object):
             
 def main():
     cache=LRUcache(10)
-    keys=['A','B','C','D','E','F','G','H','A','D','E','G','Q']
+    keys=['A','B','C','D','E','F','G','H','A','D','E','G','Q','G','G']
     for key in keys:
         if cache.get(key) is None:
             cache.add(key,ord(key)*7)
